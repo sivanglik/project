@@ -34,7 +34,7 @@ function Product({name,price,available,selectedDate,makeDays,excludeDates}) {
    
   return (
     
-    isexcludeDates && (diffDates > makeDays) && isDayAvailable ? <div className="max-w-sm rounded overflow-hidden shadow-lg ">
+    isexcludeDates && (diffDates >= makeDays) && isDayAvailable ? <div className="max-w-sm rounded overflow-hidden shadow-lg ">
   
         <div className="px-6 py-6 ">
           <div className="font-bold text-xl text-center ">{name}</div>
